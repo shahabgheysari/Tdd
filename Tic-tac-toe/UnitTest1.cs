@@ -8,29 +8,37 @@ namespace Tic_tac_toe
         [Fact]
         public void TestSpaceHasRowAndColumn()
         {
-            Space space11 = new Space(1,2);
+            Space space12 = new Space(1,2);
             
-            Assert.Equal(space11.Row(),1);
-            Assert.Equal(space11.Column(),2);
+            Assert.Equal(1,space12.Row());
+            Assert.Equal(2,space12.Column());
+            
+            Space space23 = new Space(2,3);
+            
+            Assert.Equal(2,space23.Row());
+            Assert.Equal(3,space23.Column());
         }
     }
 
     public class Space
     {
-        private int row;
-        private int column;
+        private int _row;
+        private int _column;
+        
         public Space(int row,int column)
         {
+            _row = row;
+            _column = column;
         }
 
         public int Row()
         {
-            return 1;
+            return _row;
         }
 
         public int Column()
         {
-            return 2;
+            return _column;
         }
     }
 }
