@@ -18,5 +18,14 @@ namespace Tic_tac_toe
             Assert.Equal(2,space23.Row());
             Assert.Equal(3,space23.Column());
         }
+
+        [Fact]
+        public void TestNewSpaceHasNotMark()
+        {
+            Space space21 = new Space(2,1);
+            
+            Assert.True(space21.Mark.Equals(String.Empty));
+        }
+
     }
 }
