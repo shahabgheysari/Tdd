@@ -1,0 +1,12 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+/.idea/.idea.Tic-tac-toe/.idea/codeStyles/codeStyleConfig.xml
+/.idea/.idea.Tic-tac-toe/.idea/contentModel.xml
+/.idea/.idea.Tic-tac-toe/.idea/encodings.xml
+/.idea/.idea.Tic-tac-toe/.idea/indexLayout.xml
+/.idea/.idea.Tic-tac-toe/.idea/modules.xml
+/.idea/.idea.Tic-tac-toe/.idea/projectSettingsUpdater.xml
+/.idea/.idea.Tic-tac-toe/.idea/vcs.xml
