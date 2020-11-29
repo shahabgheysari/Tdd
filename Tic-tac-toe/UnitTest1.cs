@@ -19,26 +19,4 @@ namespace Tic_tac_toe
             Assert.Equal(3,space23.Column());
         }
     }
-
-    public class Space
-    {
-        private int _row;
-        private int _column;
-        
-        public Space(int row,int column)
-        {
-            _row = row;
-            _column = column;
-        }
-
-        public int Row()
-        {
-            return _row;
-        }
-
-        public int Column()
-        {
-            return _column;
-        }
-    }
 }
