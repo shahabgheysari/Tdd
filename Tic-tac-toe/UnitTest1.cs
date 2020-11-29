@@ -26,6 +26,18 @@ namespace Tic_tac_toe
             
             Assert.True(space21.Mark.Equals(String.Empty));
         }
+        
+                
+        [Fact]
+        
+        public void TestOccupiedSpaceNotAllowedToBeingSetEmpty()
+        {
+            Space space11 = new Space(1,1);
+            space11.Mark = "O"; 
+            space11.Mark = "X";
+            
+            Assert.True("O".Equals(space11.Mark));
+        }
 
     }
 }

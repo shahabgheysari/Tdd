@@ -1,3 +1,5 @@
+using System;
+
 namespace Tic_tac_toe
 {
     public class Space
@@ -13,7 +15,13 @@ namespace Tic_tac_toe
 
         public string Mark
         {
-            set => _mark = value;
+            set
+            {
+                if (_mark.Equals(String.Empty))
+                {
+                    _mark = value;
+                } 
+            }
             get => _mark; 
         }
 
